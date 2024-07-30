@@ -1,0 +1,21 @@
+.toolboxContainer {
+  @apply absolute top-1/2 -translate-y-[50%] left-5 shadow-lg rounded-md p-2 bg-background1 border border-border1;
+
+  .toolboxItem {
+    @apply p-2 mb-2;
+
+    .colorContainer {
+      @apply flex justify-between py-2;
+
+      .colorBox {
+        @apply h-5 w-5 mr-1 drop-shadow-lg rounded-md ease-linear cursor-pointer;
+
+        &:hover,
+        &.active {
+          border: 1.5px solid theme("colors.border1");
+          scale: 1.2;
+        }
+      }
+    }
+  }
+}
